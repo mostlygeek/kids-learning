@@ -1,4 +1,4 @@
-module mostlygeek.com/kids-learning
+module github.com/mostlygeek/kids-learning
 
 go 1.14
 
