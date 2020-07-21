@@ -10,4 +10,9 @@ to tune the practice and growth week to week.
 
 * Generate PDF: `cat ad_it_ot.txt | go run generate.go ad_it_ot.pdf`
 * Create wordlist: `grep -E '.(ed|ot)' wordlist.txt > ed_ot.txt`
+
+Notes on mixing endings:
+
+* sometimes when words ending with the same sound "ot", "at" it can cause a bunch of rhyming
+* mix up ending sounds (ed + ot), (at + og) so they look different
 * list of all endings: `sed 's/.\(..\)/\1/g' wordlist.txt  | sort | uniq -c | sort -r`
