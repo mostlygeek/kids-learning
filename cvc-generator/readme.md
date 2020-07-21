@@ -10,4 +10,4 @@ to tune the practice and growth week to week.
 
 * Generate PDF: `cat ad_it_ot.txt | go run generate.go ad_it_ot.pdf`
 * Create wordlist: `grep -E '.(ed|ot)' wordlist.txt > ed_ot.txt`
-
+* list of all endings: `sed 's/.\(..\)/\1/g' wordlist.txt  | sort | uniq -c | sort -r`
