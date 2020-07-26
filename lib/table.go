@@ -29,8 +29,12 @@ func AddTablePage(pdf *gofpdf.Fpdf, list []string) *gofpdf.Fpdf {
 	pdf.SetLeftMargin(leftMargin)
 	pdf.SetTopMargin(topMargin)
 
-	// add Date
 	pdf.SetFont("Arial", "B", 16)
+	// add Name
+	pdf.SetXY(leftMargin, topMargin+12)
+	pdf.CellFormat(98, 12, "Name: _________________________", "0", 0, "RM", false, 0, "")
+
+	// add Date
 	pdf.SetXY(leftMargin+98, topMargin)
 	pdf.CellFormat(98, 12, "Date: ___________________", "0", 0, "RM", false, 0, "")
 
